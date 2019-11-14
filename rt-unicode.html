@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>UCSC Singlish - Real Time Unicode Converter</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="txtBox" id="txtBox">
+            <h1>Singlish - Real Time Font Converter</h1>
+            <input onclick="openModal()" class="button btnFade btnBlueGreen" type="button" value="Show Transliteration Scheme">
+            <p>Transliterated (SinGlish Scheme)</p>
+            <textarea onkeyup="startText();" onselect="startText();" onclick="startText();" name="box1" rows="10" spellcheck="false"></textarea>
+            <input type="reset" value="Reset">
+            <p>Unicode (යුනිකේත)</p>
+            <textarea class="unicode-output" id="unicode-output" name="box2" rows="10"></textarea>
+            <input onclick="copyit()" type="button" value="Copy">
+            <a href="index.html" class="button btnFade btnBlueGreen">Back</a>
+        </form>
+    </div>
+    <script src="js/sin_unicode.js"></script>
+</body>
+
+</html>
