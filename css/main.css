@@ -53,3 +53,11 @@ textarea {
 .unicode-output { 
     font-family: Iskoola Pota, Nirmala UI, DinaminaUniWeb, Potha, Malithi Web, Arial Unicode MS;
 }
+
+.copyright-notice {
+    text-align: left;
+    padding: 5%;
+    border: #0F1108 solid;
+    margin: 5%;
+    margin-top: 10%;
+}

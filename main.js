@@ -14,6 +14,8 @@ function createWindow () {
     }
   })
 
+  // disable menu for windows and linux
+  win.setMenu(null)
   // and load the index.html of the app.
   win.loadFile('index.html')
 
