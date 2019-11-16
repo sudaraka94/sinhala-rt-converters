@@ -2,10 +2,26 @@
     "name": "sinhala-rt-converters",
     "version": "0.1.0",
     "main": "main.js",
+    "description": "Desktop version of Sinhala Realtime Converters by Language Technology Research Laboratory - University of Colombo School of Computing",
     "scripts": {
         "start": "electron ."
     },
     "devDependencies": {
-        "electron": "^7.1.1"
+        "electron": "^7.1.1",
+        "electron-builder": "^21.2.0"
+    },
+    "build": {
+        "appId": "com.sudaraka94.sinhala-rt-conversion",
+        "mac": {
+            "category": "public.app-category.utilities"
+        },
+        "win": {
+            "target": "portable"
+        }
+    },
+    "scripts": {
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder",
+        "postinstall": "electron-builder install-app-deps"
     }
 }
