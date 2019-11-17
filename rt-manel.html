@@ -23,19 +23,23 @@
 
 <body onload="javascript:txtBox.box1.focus()" data-gr-c-s-loaded="true">
     <div class="container">
-            <h4>Unicode to DL/FM etc.</h4>
+            <h1>Unicode to DL/FM etc.</h1>
+            <a style="width:10vw; line-height: 30px; position:absolute;top:0px;left:5px; overflow: hidden;
+            z-index:10;" href="index.html" class="button btnFade btnBlueGreen">Back</a>
+            
             <form name="txtBox">
                 <p>Unicode (යුනිකේත)</p>
                 <textarea name="box1" rows="7" style="font-family: Iskoola Pota, Nirmala UI, DinaminaUniWeb, Potha, Malithi Web, Arial Unicode MS;"
                     onselect="startText();" onclick="startText();" onkeyup="startText();" spellcheck="false"></textarea>
-                <input type="reset" value="Reset">
+                <br>
+                <input class="button btnFade btnRed" type="reset" value="Reset">
                 <br>
                 <p>to any DL, FM etc. type ... </p>
                 <br>
                 <textarea style="font-family: FMDerana, FMGemunu, FMAbhaya, DL-Araliya\." name="box2" id="manel-output" rows="7"></textarea>
-                <input onclick="copyit()" type="button" value="Copy">
+                <br>
+                <input  class="button btnFade btnBlue" onclick="copyit()" type="button" value="Copy">
             </form>
-            <a href="index.html" class="button btnFade btnBlueGreen">Back</a>
     </div>
     <script src="js/unicode_manel.js"></script>
 </body>
