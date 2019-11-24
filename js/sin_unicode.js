@@ -103,7 +103,7 @@ specialCharUni[1] = 'ෘ'; specialChar[1] = 'ru';
 //specialCharUni[2]='්‍ර'; specialChar[2]='ra';
 
 
-function startText() {
+function startTextUnicode() {
     var s, r, v;
     text = document.txtBox.box1.value;
     //special consonents

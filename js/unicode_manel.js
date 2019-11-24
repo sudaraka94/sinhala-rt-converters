@@ -1,7 +1,7 @@
 var text;
 
-function startText() {
-    text = document.txtBox.box1.value;
+function startTextManel() {
+    text = document.txtBox.box2.value;
 
     text = text.replace(/,/g, "￦");
     text = text.replace(/\./g, "�");
@@ -520,10 +520,10 @@ function startText() {
     text = text.replace(/\ﾶ/g, "∙");
     text = text.replace(/ￕ/g, "]");
 
-    document.txtBox.box2.value = text;
+    document.txtBox.box3.value = text;
 }
 
-function copyit() {
+function copyitManel() {
     let textarea = document.getElementById("manel-output");
     textarea.select();
     document.execCommand("copy");
