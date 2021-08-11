@@ -15,18 +15,28 @@
             <h1>Singlish - Real Time Font Converter</h1>
             <a style="width:10vw; line-height: 30px; position:absolute;top:0px;left:5px; overflow: hidden;
             z-index:10;" href="index.html" class="button btnFade btnBlueGreen">Back</a>
-            <input onclick="openModal()" class="button btnFade btnBlueGreen" type="button" value="Show Transliteration Scheme">
+            <input onclick="openModal()" class="button btnFade btnBlueGreen" type="button"
+                value="Show Transliteration Scheme">
             <p>Transliterated (SinGlish Scheme)</p>
-            <textarea onkeyup="startTextUnicode();" onselect="startTextUnicode();" onclick="startTextUnicode();" name="box1" rows="10" spellcheck="false"></textarea>
+            <textarea onkeyup="startTextUnicode();startTextManel();" onselect="startTextUnicode();startTextManel();" onclick="startTextUnicode();startTextManel();" name="box1" rows="10"
+                spellcheck="false"></textarea>
             <br>
             <input class="button btnFade btnRed" type="reset" value="Reset">
             <p>Unicode (යුනිකේත)</p>
             <textarea class="unicode-output" id="unicode-output" name="box2" rows="10"></textarea>
             <br>
             <input class="button btnFade btnBlue" onclick="copyit()" type="button" value="Copy">
+            <br>
+            <p>to any DL, FM etc. type ... </p>
+            <br>
+            <textarea style="font-family: FMDerana, FMGemunu, FMAbhaya, DL-Araliya\." name="box3" id="manel-output"
+                rows="7"></textarea>
+            <br>
+            <input class="button btnFade btnBlue" onclick="copyitManel()" type="button" value="Copy">
         </form>
     </div>
     <script src="js/sin_unicode.js"></script>
+    <script src="js/unicode_manel.js"></script>
 </body>
 
 </html>
